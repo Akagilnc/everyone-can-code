@@ -21,5 +21,4 @@
 	• div标签，语义化标签，header section footer标签
 	• h1标签，img标签，p标签
 	• link标签，class和id的概念，如何用它们连接HTML和CSS
-	• background，color，margin&padding，z-index, text-align, 
-	width与height, opacity等，如何用它们来改变页面效果
+	• background，color，margin&padding，z-index, text-align, width与height, opacity等，如何用它们来改变页面效果
