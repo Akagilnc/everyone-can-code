@@ -1,5 +1,9 @@
+html {
+    height: 100%;
+}
 body {
-    background: black
+    background: black;
+    height: 100%;
 }
 
 img {
@@ -22,6 +26,6 @@ img {
     background: url('../images/UA-airTRFX-chengdu.jpg') no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     opacity: 0.6;
 }
