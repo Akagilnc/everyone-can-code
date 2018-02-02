@@ -12,7 +12,8 @@
 	•	DIV标签，什么叫语义化标签，HEADER SECTION FOOTER标签
 	•	H1标签，img标签，p标签
 	•	link标签，class和id的概念，如何用它们连接HTML和CSS
-	•	background，color，font，如何用它们来改变页面效果
+	•	background，color，margin&padding，z-index, text-align, width与height, 
+	opacity等，以及如何用它们来改变页面效果
 **目标**
 
 	•	懂得HTML页面的基本概念
