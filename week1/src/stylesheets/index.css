@@ -35,6 +35,15 @@ a {
     color: white;
 }
 
+nav > a {
+    border-left: 1px solid white;
+    padding-left: 2%;
+}
+
+nav > a:first-child {
+    border-left: none;
+}
+
 #main {
     margin: auto;
     position: absolute;
