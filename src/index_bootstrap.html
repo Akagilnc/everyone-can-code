@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        div {
+            border: 2px solid black;
+        }
+
+        section {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<section id="equal-width" class="container">
+    <div class="row">
+        <div class="col">
+            1 of 2
+        </div>
+        <div class="col">
+            2 of 2
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col">
+            2 of 3
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+</section>
+
+<section id="equal-width-multi-row" class="container">
+    <div class="row">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="w-100"></div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+    </div>
+</section>
+
+<section id="variable-width-content" class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+            1 of 3
+        </div>
+        <div class="col-md-auto">
+            Variable width content
+        </div>
+        <div class="col col-lg-2">
+            3 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-md-auto">
+            Variable width content
+        </div>
+        <div class="col col-lg-2">
+            3 of 3
+        </div>
+    </div>
+</section>
+
+<section id="buttons" class="container">
+    <div class="row justify-content-md-center">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+</section>
+
+<section id="center-content" class="container">
+    <div class="row align-items-start justify-content-md-center" style="height: 100px">
+        <div>
+            One of three columns
+        </div>
+        <div>
+            One of three columns
+        </div>
+        <div>
+            One of three columns
+        </div>
+    </div>
+    <div class="row align-items-center" style="height: 100px">
+        <div class="col-4" style="margin: auto">
+            <div class="col" style="margin: auto">
+                One of three columns
+            </div>
+            <div class="col" style="margin: auto">
+                One of three columns
+            </div>
+            <div class="col" style="margin: auto">
+                One of three columns
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-end" style="height: 100px">
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
