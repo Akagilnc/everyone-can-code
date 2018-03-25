@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+}
+body{
+    background: black;
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+a{
+   color: white;
+   decoration: none;
+}
+#image-background{
+   background: url('../images/night2.jpg');
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   z-index: -99;
+   position: absolute;
+   opacity: 0.3;
+}
+#main{
+   margin: 0;
+   position: absolute;
+   left: 30%;
+   right:30%
+   top: 0%;
+   opacity: 0.7;
+}
+#second{
+   position: absolute;
+   top: 40%;
+   left: 36%;
+   right: 35%;
+}
+footer{
+   position: absolute;
+   bottom: 0;
+   left: 30%;
+   right: 30%;
+}

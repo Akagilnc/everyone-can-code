@@ -1,0 +1,61 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: black;
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#image-background {
+    background: url('../images/UA-airTRFX-chengdu.jpg');
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+    opacity: 0.6;
+    position: absolute;
+    z-index: -99;
+}
+footer {
+    position: absolute;
+    text-align: left;
+    bottom: 0;
+    background: black;
+    right: 0;
+    left: 0;
+    height: 8%;
+}
+header {
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    height: 5%;
+}
+#main {
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+}
+footer > p{
+    margin: 0.5%;
+}
+.icon{
+    height: 50px;
+}
+nav > a {
+    border-left: 1px solid white;
+    padding-left: 2%;
+}
+nav > a:first-child {
+    border-left: 1px solid transparent;
+}
