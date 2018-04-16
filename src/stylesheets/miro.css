@@ -69,3 +69,17 @@ nav > a:first-child {
     border: solid 2px white;
     border-radius: 8px;
 }
+.kankan >img{
+    width: 40%;
+    height: 400px;
+    margin: 1%;
+    border: solid 2px white;
+    border-radius: 8px;
+}
+.future >img{
+    width: 40%;
+    height: 400px;
+    margin: 1%;
+    border: solid 2px white;
+    border-radius: 8px;
+}
