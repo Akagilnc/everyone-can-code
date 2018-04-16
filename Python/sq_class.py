@@ -12,3 +12,4 @@ def sq(g):
 # g = int(input("input 16: "))
 # x = sq(g)
 # print(x)
+
