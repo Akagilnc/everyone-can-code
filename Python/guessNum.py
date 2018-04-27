@@ -1,6 +1,5 @@
 import random
 
-# 设置数字的范围与开始时的次数
 highest, lowest, i = 10, 0, 1
 
 # 生成正确答案
@@ -31,4 +30,3 @@ if i != 1:
     print('You got it in {} times.'.format(i + 1))
 else:
     print("You got it at the first time!!!")
-

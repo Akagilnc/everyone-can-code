@@ -1,9 +1,9 @@
 html {
-    height: 100%;
+    height: 200%;
 }
 body {
     background: black;
-    height: 100%;
+    height: 200%;
     margin: 0;
     color: white;
 }
@@ -12,8 +12,8 @@ a {
     text-decoration: none;
 }
 #image-background {
-    background: url('../images/UA-airTRFX-chengdu.jpg')no-repeat;
-    background-size: cover;
+    background: url('../images/UA-airTRFX-chengdu.jpg');
+    background-size: contain;
     width: 100%;
     height: 100%;
     opacity: 0.6;
@@ -21,7 +21,7 @@ a {
     z-index: -99;
 }
 footer{
-    position: absolute;
+    position: fixed;
     text-align: left;
     bottom: 0;
     left: 0;
@@ -31,13 +31,13 @@ footer{
 }
 header{
     margin: auto;
-    position: absolute;
+    position: fixed;
     text-align: left;
     color: white;
     top: 0;
     height: 5%;
 }
-#main {
+#main, #food, #pretty {
     margin: auto;
     position: absolute;
     top: 40%;
@@ -46,6 +46,12 @@ header{
     right: 40%;
     color: rgba(255,255,255);
     text-align: center;
+}
+#food{
+    top: 80%;
+}
+#pretty{
+    top: 120%;
 }
 footer > p {
     margin: 0.5% 0;
