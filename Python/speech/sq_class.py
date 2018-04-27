@@ -9,7 +9,7 @@ def sq(g):
     x = 3
     times = 1
     # 当x的平方不等于g时，重复执行以下步骤
-    while x**2 != g:
+    while abs(x**2 - g) > 0.0001:
         # 求平方根方法的公式 x = (g/x + x)/2 
         x = (g/x + x)/2
         times += 1
