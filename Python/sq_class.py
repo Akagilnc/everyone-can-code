@@ -1,15 +1,16 @@
-# 输入一个数值，得到他的开方
-# input 16 output 4
-def sq(g):
-    # x*x 比对 g 相等就返回，不相等就继续
-    # (g/x + x)/2
-    x = 3
-    while True:
-        if x*x == g:
-            return x
-        x = (g/x + x)/2
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-# g = int(input("input 16: "))
-# x = sq(g)
-# print(x)
+def sq(g):
+    # 获取用户的输入g
+    # 设置初始猜测的平方根为x = 3
+    x = 3
+    # 当x的平方不等于g时，重复以下步骤
+    while x**2 != g:
+        # 求平方根的公式，x = (g/x + x)/2
+        x = (g/x + x)/2
+    # 返回x
+    return x
+
+
 
