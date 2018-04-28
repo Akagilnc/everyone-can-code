@@ -1,8 +1,11 @@
-# 如果是偶数那么除于 2 余数为 0
-# 如果余数为 1 则为奇数
+# 输入一个数字n
+# 判断它的奇偶性
  
-num = int(input("数字: "))
-if (num % 2) == 0:
-    print("it's an even")
-else:
-    print("it's an odd")
+def number_deal(a):
+    if a % 2 == 0:
+        print("it's an even")
+    else:
+        print("it's an odd")
+
+number_deal(5)
+
