@@ -1,7 +1,7 @@
 ##!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def number_deal(a):
+def ji_ou(a):
     # 判断x是否为偶数
     if a % 2 == 0:
         # 返回“it's an even"
@@ -10,4 +10,4 @@ def number_deal(a):
     return "it's an odd"
 
 a=5
-print number_deal(5)
+print ji-ou(5)
