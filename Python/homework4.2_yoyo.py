@@ -1,10 +1,10 @@
 #函数一：判断奇数和偶数
-def number(num):
+def even_odd(num):
     if num % 2 == 0 :
         return "it is a even"
-    return "it is a odd number"
+    return "it is an odd number"
 #函数二：计算字符串长度
-def length(var):
+def  string_not(var):
      if type(var) == str :
          return int(len(var))
      else :
@@ -15,7 +15,7 @@ def cube(number):
      basic, x, y = 1, 0.001, 0.0001
 #计算和比较
      while abs(number - basic**3) > y :
-         basic += 1
+         basic += x
      else :
          return int(basic)
 #测试程序运行
