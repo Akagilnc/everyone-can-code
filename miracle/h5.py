@@ -1,6 +1,6 @@
-# 输入一个数字n
-# 判断它的奇偶性
- 
+##!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 def number_deal(a):
     # 判断x是否为偶数
     if a % 2 == 0:
