@@ -21,12 +21,12 @@ def string_valid(sentence):
     
 # fuction 3
 def cube_root(g):
-    # 定义精度
-    epi = 0.00001
+    # 定义精度,定义变量
+    epi,x= 0.00001,0.001
     low, high = 1, g
-    x = (low + high)/2
-    while abs(x**3 - g) < epi:
+    while abs(x**3 - g) > epi:
 
+        x = (low + high)/2
         if (x**3 > g):
             high = x
         else: 
@@ -34,11 +34,19 @@ def cube_root(g):
          # 次数 += 1
         x += 1
     #返回 x
-    return 
+    return x
 
-g=(9)
+g = (9)
 
 
+# function 1
+def stats_vowel(s):
+    s = str
+    count = 0
+    for i in s:
+        if i in 'aeiou':
+        count += 1
+        print countchar (s)
        
 
 
