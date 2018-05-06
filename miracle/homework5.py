@@ -10,4 +10,4 @@ def ji_ou(a):
     return "it's an odd"
 
 a=5
-print ji_ou(5)
+

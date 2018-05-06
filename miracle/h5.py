@@ -8,35 +8,45 @@ def even_odd(a):
         # 返回“it's an even"
         return "it's an even" 
     #返回“it's an odd"
-    return "it's an odd"
+    return "it's an odd number"
 
 # function 2
-def string_valid(sentence)
+def string_valid(sentence):
     # 判断是否为字符串
     if type(sentence) == str :
         #返回字符串的长度
-        return len(shentence)
+        return len(sentence)
     #返回“invalid string”
     return "invalid string"
     
 # fuction 3
-def cube_root(g)
-    # 定义精度，定义变量，数字
-    epi, x, n = 0.00001, 0.001，1
+def cube_root(g):
+    # 定义精度,定义变量
+    epi,x= 0.00001,0.001
     low, high = 1, g
-   # 如果 猜测立方根 ** 3 - g > 精度 重复执行下面的步骤
-    while abs(n**3 - g) > epi:
-         # 猜测立方根 += step
+    while abs(x**3 - g) > epi:
 
-         x = (low + high)/2
+        x = (low + high)/2
         if (x**3 > g):
             high = x
         else: 
             low = x
          # 次数 += 1
-        n += 1
-        #返回 x
-        return x
+        x += 1
+    #返回 x
+    return x
+
+g = (9)
+
+
+# function 1
+def stats_vowel(s):
+    s = str
+    count = 0
+    for i in s:
+        if i in 'aeiou':
+        count += 1
+        print countchar (s)
        
 
 
