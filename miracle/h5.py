@@ -39,15 +39,7 @@ def cube_root(g):
 g = (9)
 
 
-# function 1
-def stats_vowel(s):
-    s = str
-    count = 0
-    for i in s:
-        if i in 'aeiou':
-        count += 1
-        print countchar (s)
-       
+
 
 
 
