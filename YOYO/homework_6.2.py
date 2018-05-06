@@ -9,4 +9,4 @@ def vowel_account(s):
     return vowels_account
 #测试程序
 s = "azcbobobegghakl"
-print(vowel_account(s))
+print ("Number of vowels:" , vowel_account(s) )
