@@ -2,15 +2,15 @@
 # -*- coding: utf-8 -*-
 
 # 统计元音个数
-def count_vowel(s):
-    # 元音字母总个数
+def num_of_vowels(s):
     count = 0
     for letter in s:
-        if letter=='a' or letter=='e' or letter=='i' or letter=='o' or letter=='u':
+        if letter in 'aeiou':
             count += 1
+    return count
 # 测试
 s ='azcbobobegghakl'           
-print ("numbers of vowels:" + count_vowel(s))
+print ("Numbers of vowels: " , num_of_vowels(s))
 
 # 统计“bob次数”
 def num_bob(str):
@@ -18,7 +18,7 @@ def num_bob(str):
     return result.count('bob')
 # 测试
 str = 'azcbobobegghakl'
-print ("Number of times bob occurs is :" + num_bob(str))
+print ("Number of times bob occurs is: " , num_bob(str))
 
 # 最长字符
 def longest_substring(s):
@@ -32,10 +32,10 @@ def longest_substring(s):
             index += 1
     return max(in_orders, key=len)  
 # 测试
-s1 = 'azcbobobegghakl' 
-print ("Longest substring in alphabetical order is: " + longest_substring(s))
-s2 = 'abcbcd'  
-print ("Longest substring in alphabetical order is: " + longest_substring(s))
+s = 'azcbobobegghakl' 
+print ("Longest substring in alphabetical order is: " , longest_substring(s))
+s = 'abcbcd'  
+print ("Longest substring in alphabetical order is: " , longest_substring(s))
    
 
 
