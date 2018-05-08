@@ -10,4 +10,4 @@ def even_odd(x):
 n = input('请输入一个数字: ')
 
 #调用函数
-even_odd(n)
+even_odd(int(n))
