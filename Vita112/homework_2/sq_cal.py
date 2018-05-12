@@ -8,7 +8,7 @@ def sq_cal(g):
     # 设置函数出口
     while abs(x**2 - g) >= s:
         x = (low + high) / 2
-    # 设计二分搜索算法，规定g的开方根在精度外时的计算方法
+    # 使用二分搜索算法，规定g的开方根在精度外时的计算方法
         if x**2 > g:
             high = x
         else:
@@ -19,4 +19,4 @@ def sq_cal(g):
 
 
 # 调用函数，输出结果
-sq_cal(9)
+print(sq_cal(9))
