@@ -19,4 +19,4 @@ def sq_cal(g):
 
 
 # 调用函数，输出结果
-print(sq_cal(9))
+print(sq_cal(-9))

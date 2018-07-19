@@ -6,4 +6,4 @@ Lucy = person.Person(name='Lucy', hp=0, job='Knight', weapon=long_sword, mp=0)
 print(Lucy.weapon.attack)
 
 print(Lucy.name, Lucy.job, Lucy.hp, Lucy.weapon.name)
-print(Lucy.weapon.weapon_type)
+print(Lucy.weapon)

@@ -18,5 +18,5 @@ def find_longest_sub_str(input_str):
     return result_list[-1]
 
 
-print(find_longest_sub_str('abcbcdea'))
-print(find_longest_sub_str('hgedabgjklgecegjkmnq'))
+# print(find_longest_sub_str('abcbcdea'))
+print(find_longest_sub_str(input('请输入一组小写英文字母： ')))
