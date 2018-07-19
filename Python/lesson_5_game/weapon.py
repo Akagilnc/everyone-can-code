@@ -2,7 +2,7 @@ class Sword:
     weapon_type = 'Sword'
 
     def __init__(self, att, defence, name):
-        self.attack = att,
+        self.attack = att
         self.defence = defence
         self.name = name
 
