@@ -6,7 +6,7 @@ class ParkingLot:
         self.seat = []
 
     def parking(self,car):
-        if car:
+        if car is type(Car):
             self.seat.append(car)
             self.empty -= 1
 
@@ -23,17 +23,14 @@ class Car:
 
 class ParkingBoy:
 
-    def __init__(self,parkinglotlist):
-        self.parkinglotlist = parkinglotlist
-        if type(parkinglotlist) != list:
-            raise TypeError('This is not a list!')
+    def __init__(self,parkinglot):
+        self.parkinglot = parkinglot
 
     def parking(self, car):
-        self.parkinglotlist.parking(car)
+        self.parkinglot.parking(car)
 
     def take_out(self, car):
-        self.parkinglotlist.take_out(car)
-
+        self.parkinglot.take_out(car)
 
 BMW = Car()
 Auto = Car()
@@ -41,13 +38,11 @@ Auto = Car()
 yoyo_park = ParkingLot(20)
 momo_park = ParkingLot(10)
 lolo_park = ParkingLot(50)
-yoyo = ParkingBoy([yoyo_park, momo_park, lolo_park])
+yoyo = ParkingBoy(yoyo_park)
 
-yoyo_park.parking(BMW)
-momo_park.parking(Auto)
-
-
-print(yoyo.parkinglotlist)
+yoyo.parking(BMW)
+yoyo.take_out(BMW)
+print(yoyo_park.empty)
 
 
 
