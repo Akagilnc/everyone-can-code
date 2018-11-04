@@ -22,22 +22,16 @@ def get_numbers():
         # 记录在每个数字旁边
         number.even_or_odd = result
         number_list.append(number)
-    print(number_list)
+    print(number_list, '\n')
+
+
+@attr.s
+class News:
+    news_date = attr.ib()
+    news_content = attr.ib()
 
 
 get_numbers()
-
-
-class News:
-    def __init__(self, news_date, news_content):
-        self.news_date = news_date
-        self.news_content = news_content
-
-    def __repr__(self):
-        return "{}(news_date = {}, news_content = {}) \n".format(
-            self.__class__.__name__, self.news_date, self.news_content)
-
-
 news_list = []
 df = pd.read_csv('RedditNews.csv')
 for news in df.get_values():
