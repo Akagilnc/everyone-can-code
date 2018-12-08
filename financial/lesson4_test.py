@@ -1,18 +1,27 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
-from pprint import pprint
+from lesson2_homework import News
 
 options = Options()
 options.headless = True
 
 page_link = 'http://www.cs.com.cn/ssgs/gsxw/'
-driver = webdriver.Chrome('./chromedriver', chrome_options=options)
-driver.get(page_link)
+browser = webdriver.Chrome('./chromedriver', chrome_options=options)
+browser.get(page_link)
 
-# news_titles = driver.find_elements_by_class_name('mEaVNd')
-news_list = driver.find_elements_by_css_selector('body > div:nth-child(7) > div.box835.hidden.left > ul > li')
+news_elements_list = browser.find_elements_by_css_selector('body > div:nth-child(7) > div.box835.hidden.left > ul > li')
 
-# pprint([news.text for news in news_list])
-pprint([(news.find_element_by_tag_name('span').text, news.find_element_by_tag_name('a').get_attribute('href'),
-         news.find_element_by_tag_name('a').text) for news in news_list])
+
+result_list = []
+for news_element in news_elements_list:
+    news = News(title=news_element.find_element_by_tag_name('a').text, autho='', source=page_link, link=news_element.find_element_by_tag_name('a').get_attribute('href'),
+                public_time=news_element.find_element_by_tag_name('span').text, is_read=False, content='')
+    result_list.append(news)
+
+with open('news_file.txt', 'w') as file:
+    for news in result_list:
+        file.write(news.title + " " + news.public_time + " " + news.link + '\n')
+
+
+
